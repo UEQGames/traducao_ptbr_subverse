@@ -1,0 +1,17 @@
+{
+  "project": "Subverse - Tradução PT-BR",
+  "version": "1.1",
+  "language": "pt-BR",
+  "platform": "Windows",
+  "main_asset": "pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak",
+  "main_asset_size": 109746659,
+  "main_asset_sha256": "8a95686aac8512a57eee20726244247567d6e1f58e0a1ab720b4fa2742776df0",
+  "distribution": "GitHub Release",
+  "tested_store": "GOG",
+  "known_limitations": [
+    "Alguns resíduos de UI podem permanecer em inglês.",
+    "Os upgrades da Fênix podem conter textos de interface ainda não traduzidos.",
+    "Algumas falas excepcionalmente longas podem ultrapassar caixas de diálogo sem rolagem.",
+    "Atualizações futuras do jogo podem exigir atualização da tradução."
+  ]
+}

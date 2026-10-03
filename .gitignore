@@ -1,0 +1,21 @@
+# Release binaries
+/dist/
+*.pak
+*.zip
+*.rar
+*.7z
+
+# Local development / extraction
+/extracted/
+/build/
+/temp/
+/tmp/
+*.ucas
+*.utoc
+
+# OS/editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
