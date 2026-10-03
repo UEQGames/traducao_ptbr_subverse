@@ -1,27 +1,17 @@
 # Compatibilidade
 
-## Ambiente usado no desenvolvimento
+A tradução foi criada e testada na versão GOG de Subverse utilizada durante o desenvolvimento do projeto.
 
-A tradução v1.1 foi criada e testada sobre a versão **GOG** de Subverse utilizada durante o desenvolvimento do projeto.
+Atualizações futuras podem modificar:
 
-## Atualizações do jogo
-
-Subverse pode receber alterações em:
-
-- textos;
-- StringTables;
-- Blueprints;
 - assets;
-- mapas;
-- estruturas Unreal;
-- interface.
+- textos;
+- arquivos de localização;
+- StringTables;
+- DataTables;
+- Blueprints;
+- estruturas internas do jogo.
 
-Uma atualização futura pode fazer com que textos novos ou modificados apareçam em inglês ou torne necessária uma nova build do mod.
+Se isso ocorrer, conteúdos novos ou alterados podem voltar a aparecer em inglês ou exigir uma atualização da tradução.
 
-## Outras versões da tradução
-
-Remova PAKs antigos da tradução antes de instalar a v1.1. Manter duas versões simultaneamente pode causar conflito de prioridade entre PAKs.
-
-## Outras lojas
-
-O pacote não declara compatibilidade garantida com builds de outras lojas que não tenham sido testadas.
+O release final não exige apagar nem reiniciar saves.

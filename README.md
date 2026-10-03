@@ -1,128 +1,170 @@
-# Subverse — Tradução PT-BR
+# Subverse — Tradução PT-BR FINAL
 
-Tradução não oficial de **Subverse** para **Português Brasileiro (PT-BR)**.
+Tradução não oficial praticamente completa de **Subverse** para **Português Brasileiro (PT-BR)**.
 
-O projeto busca traduzir o máximo possível do conteúdo textual do jogo preservando o tom original, as personalidades dos personagens, o humor, os palavrões, o conteúdo adulto e a linguagem irreverente — sem censura intencional.
+Depois de várias etapas de tradução, auditoria, correção de interface, revisão de diálogos e testes dentro do jogo, esta versão representa o **release final do projeto**.
+
+A tradução cobre **mais de 10 mil entradas** do sistema de localização, além de centenas de textos adicionais encontrados diretamente em interfaces, DataTables, StringTables, missões, sistemas de combate e conteúdos que não faziam parte do sistema principal de localização do jogo.
+
+O objetivo foi traduzir o máximo possível preservando o tom original, as personalidades dos personagens, o humor, os palavrões, o conteúdo adulto e a linguagem irreverente do jogo — sem censura intencional.
 
 ## Status
 
-- Versão da tradução: **1.1**
-- Idioma: **Português Brasileiro**
-- Plataforma: **Windows**
-- Formato distribuído: **Unreal Engine `.pak`**
-- Arquivo da release: `pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak`
-- Tamanho do PAK: **109,746,659 bytes**
-- SHA-256: `8a95686aac8512a57eee20726244247567d6e1f58e0a1ab720b4fa2742776df0`
+- **Status:** FINAL
+- **Versão do pacote:** 2.1 FINAL
+- **Idioma:** Português Brasileiro
+- **Plataforma:** Windows
+- **Formato distribuído:** Unreal Engine `.pak`
+- **Arquivo principal:** `pakchunk99999-SubversePTBR_STANDALONE_FINAL_P.pak`
+- **Tamanho do PAK:** 109,918,762 bytes
+- **SHA-256:** `05f592145f4a9af8926704fc4435a284439ae9dc152a5981a82e12ac7cb54f37`
 
 ## Download
 
-Para instalar a tradução, baixe o pacote pronto na seção **Releases** do GitHub.
+Baixe o pacote pronto na seção **Releases** do GitHub.
 
-O arquivo `.pak` não fica versionado no repositório porque é um binário grande. Ele é distribuído somente como asset da Release.
-
-## Instalação rápida
-
-1. Feche Subverse.
-2. Baixe `Subverse_PTBR_v1.1.zip` em **Releases**.
-3. Extraia o ZIP.
-4. Remova versões antigas da tradução PT-BR da pasta `Paks`.
-5. Copie `pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak` para:
-
-```text
-Subverse\Content\Paks\
-```
-
-Exemplo de instalação GOG:
-
-```text
-C:\Games\Subverse\Subverse\Content\Paks\
-```
-
-6. Inicie o jogo normalmente.
-
-Veja [docs/INSTALL.md](docs/INSTALL.md).
+O `.pak` final não é versionado diretamente no repositório porque é um binário grande. Ele é distribuído como asset da Release.
 
 ## O que está traduzido
 
-- diálogos;
-- narrativa;
-- missões e objetivos;
-- tutoriais;
-- codex / lore;
-- descrições;
-- planetas, luas e outros corpos celestes;
-- habilidades;
-- tooltips;
-- textos de gameplay;
-- grande parte dos menus e da interface;
-- conteúdo adulto e falas explícitas sem censura intencional.
+- Diálogos
+- Narrativa
+- Missões e objetivos
+- Devotion Quests
+- Diálogos e interações das Devotion Quests
+- Tutoriais
+- Codex / lore
+- Descrições
+- Habilidades
+- Upgrades da F3N1X / Phoenix
+- Tooltips
+- Textos de gameplay
+- Grid Combat
+- Textos de combate
+- Mary Celeste
+- Loja da Taron
+- Interface da Pandora
+- StringTables e textos auxiliares de interface
+- Grande parte dos menus e da interface
+- Conteúdo adulto e falas explícitas sem censura intencional
 
-A **v1.1** inclui uma auditoria adicional dos mapas de navegação, recuperando descrições de corpos celestes que não haviam sido capturadas na primeira varredura.
+A revisão buscou preservar não apenas o significado das frases, mas também personalidade, registro, humor e maneira de falar de cada personagem.
 
-## Melhorias da v1.1
+## Patch notes — versão final
 
-- descrições de planetas, luas e corpos celestes incorporadas;
-- auditoria independente de `MODNavigation/Maps`;
-- correções adicionais em quests, diálogos, descrições e interface;
-- correção de casos de `<MISSING STRING TABLE ENTRY>`;
-- reinjeção Unreal mais conservadora;
-- assets com `ScriptBytecode` não são reconstruídos via `fromjson`;
-- build reconstruída a partir dos PAKs originais utilizados durante o desenvolvimento.
+- Corrigidos crashes que podiam ocorrer ao abrir determinadas quests.
+- Corrigidas referências internas traduzidas acidentalmente que podiam interferir no funcionamento do jogo.
+- Corrigido o seletor de cenas da Pandora quando aparecia sem opções.
+- Corrigida a interface da loja da Taron.
+- Restaurada a atualização correta dos créditos da loja.
+- Traduzidos diálogos das Devotion Quests.
+- Traduzidas centenas de interações, prompts e textos usados nas Devotion Quests.
+- Traduzidos diálogos exibidos pelo sistema Speech Bubble.
+- Traduzidos textos pós-Devotion que permaneciam em inglês.
+- Revisadas referências ao Capitão e corrigidos problemas de gênero encontrados no QA.
+- Traduzidas descrições de habilidades e upgrades da F3N1X / Phoenix.
+- Corrigidos textos de posicionamento e interface do Grid Combat.
+- Eliminadas ocorrências encontradas de `<MISSING STRING TABLE ENTRY>`.
+- Corrigidos `QUEST MARKER LEGEND` e `MAIN QUEST AND SIDE QUEST`.
+- Traduzidos `Press to Skip` e outros fallbacks visíveis.
+- Restaurados mais de 300 textos da interface da Mary Celeste.
+- Revisado o sistema de localização para preservar identificadores técnicos, referências de vídeo, áudio, quests e outros elementos internos.
+- Nenhum Blueprint executável foi reconstruído para aplicar a tradução.
 
-## Limitações conhecidas
+## Instalação
 
-Alguns resíduos de interface ainda podem permanecer em inglês. Os upgrades da Fênix são uma área conhecida.
-
-Traduções excepcionalmente longas também podem ultrapassar caixas de diálogo que não possuem rolagem ou redimensionamento automático suficiente.
-
-Veja [docs/KNOWN_ISSUES.md](docs/KNOWN_ISSUES.md).
-
-## Desinstalação
-
-Apague:
+1. Feche o jogo.
+2. Se já usou uma versão anterior da tradução, remova os PAKs antigos.
+3. Baixe e extraia o pacote da Release.
+4. Copie:
 
 ```text
-pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak
+pakchunk99999-SubversePTBR_STANDALONE_FINAL_P.pak
 ```
 
-de:
+para:
 
 ```text
 Subverse\Content\Paks\
 ```
 
-Nenhum arquivo original do jogo é substituído permanentemente.
+Exemplo GOG:
+
+```text
+C:\Games\Subverse\Subverse\Content\Paks
+```
+
+5. Certifique-se de que não há versões antigas da tradução na mesma pasta.
+6. Inicie o jogo normalmente.
+
+Mais detalhes em [docs/INSTALL.md](docs/INSTALL.md).
+
+## Atualizando de uma versão antiga
+
+Remova todos os PAKs anteriores da tradução PT-BR antes de instalar o release final.
+
+Você precisa manter apenas o PAK fornecido nesta versão.
+
+Nenhum save precisa ser apagado ou reiniciado.
+
+## Desinstalação
+
+Apague o PAK da tradução da pasta:
+
+```text
+Subverse\Content\Paks
+```
+
+Nenhum arquivo original do jogo é substituído e os saves não são modificados pelo mod.
+
+## Limitações conhecidas
+
+Ainda podem existir resíduos extremamente pequenos em inglês.
+
+Alguns textos ficam diretamente em Blueprints executáveis ou elementos gráficos. Modificá-los poderia exigir alterar bytecode do jogo e criar risco desnecessário de crashes ou corrupção de sistemas, por isso casos de baixíssima prioridade foram preservados.
+
+Também existem casos raros em que o texto em português ocupa mais espaço vertical que o original. Algumas caixas de diálogo não possuem rolagem ou redimensionamento suficientes, então uma fala excepcionalmente longa pode ter a última linha cortada.
+
+Esses resíduos não impedem progressão e representam uma parcela mínima do conteúdo textual.
+
+Veja [docs/KNOWN_ISSUES.md](docs/KNOWN_ISSUES.md).
 
 ## Compatibilidade
 
-A tradução foi criada e testada sobre a versão GOG de Subverse utilizada durante o desenvolvimento.
+A tradução foi criada e testada na versão GOG de Subverse utilizada durante o desenvolvimento.
 
-Atualizações futuras do jogo podem modificar textos, assets ou estruturas Unreal e exigir uma atualização da tradução.
+Atualizações futuras podem modificar assets, textos ou arquivos de localização e exigir uma atualização da tradução.
 
 Veja [docs/COMPATIBILITY.md](docs/COMPATIBILITY.md).
 
-## Processo de localização
+## Sobre o processo
 
-A tradução foi produzida com auxílio de ferramentas de inteligência artificial e revisão/QA durante o processo de localização.
+A tradução foi produzida com auxílio de ferramentas de inteligência artificial, tradução contextual, análise estrutural dos arquivos do jogo e revisão/QA.
 
-Foram usados métodos de proteção para placeholders, tags, identificadores técnicos, StringTables e estruturas Unreal. Assets com `ScriptBytecode` recebem tratamento conservador para evitar reconstruções inseguras.
+O processo incluiu:
 
-Detalhes em [docs/TECHNICAL.md](docs/TECHNICAL.md).
+- extração e descoberta de textos;
+- tradução contextual;
+- revisão por personagem;
+- auditoria de resíduos;
+- análise de StringTables e DataTables;
+- proteção de placeholders e markup;
+- verificação de identificadores técnicos;
+- reconstrução segura dos arquivos modificados;
+- testes dentro do jogo.
 
-## Suporte / bugs
+Na fase final, também foi feita uma auditoria específica para separar textos visíveis ao jogador de strings internas usadas pelo Unreal Engine como identificadores, comandos, seletores e referências.
 
-Ao abrir uma **Issue**, informe:
+Isso permitiu corrigir problemas de builds anteriores sem modificar `ScriptBytecode` dos Blueprints.
 
-- onde o jogo foi adquirido;
-- versão/build do jogo, se conhecida;
-- se existiam versões antigas da tradução na pasta `Paks`;
-- texto ou tela que permaneceu em inglês;
-- captura de tela quando aplicável.
+Mais detalhes em [docs/TECHNICAL.md](docs/TECHNICAL.md).
 
-## Direitos e distribuição
+## Aviso
 
-Subverse, seus personagens, marcas, imagens, áudio, código e demais elementos pertencem aos respectivos detentores.
+Este mod contém somente os arquivos necessários para aplicar a tradução.
 
-Este é um projeto de fã, não oficial e sem vínculo com Studio FOW ou os desenvolvedores de Subverse.
+É necessário possuir uma cópia legítima de Subverse.
 
-Consulte [LICENSE_NOTICE.md](LICENSE_NOTICE.md).
+A tradução é um projeto de fã, não oficial e sem vínculo com Studio FOW ou os desenvolvedores de Subverse.
+
+Veja [LICENSE_NOTICE.md](LICENSE_NOTICE.md).

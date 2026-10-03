@@ -12,6 +12,7 @@ assignees: ''
 - [ ] Compatibilidade
 - [ ] Texto ainda em inglês
 - [ ] Texto cortado / interface
+- [ ] Quest / gameplay
 - [ ] Outro
 
 ## Descrição

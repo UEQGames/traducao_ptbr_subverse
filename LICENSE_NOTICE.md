@@ -2,11 +2,11 @@
 
 Este projeto é uma tradução não oficial criada por fãs.
 
-**Subverse**, seus personagens, marcas, imagens, áudio, código e demais elementos do jogo pertencem aos respectivos detentores, incluindo Studio FOW quando aplicável.
+**Subverse**, seus personagens, marcas, imagens, áudio, código e demais elementos do jogo pertencem aos respectivos detentores.
 
 O repositório não distribui o jogo original.
 
-A contribuição textual da tradução **não está sendo publicada sob uma licença aberta específica neste momento**. Na ausência de uma licença explícita, não se presume autorização para redistribuir versões modificadas deste projeto ou explorá-lo comercialmente.
+A contribuição textual da tradução não está sendo publicada sob uma licença aberta específica neste momento. Na ausência de uma licença explícita, não se presume autorização para redistribuir versões modificadas deste projeto ou explorá-lo comercialmente.
 
 Não venda este pacote e não o apresente como produto oficial.
 

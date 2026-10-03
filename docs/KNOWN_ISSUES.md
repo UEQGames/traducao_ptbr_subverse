@@ -1,11 +1,15 @@
 # Limitações conhecidas
 
-Na versão 1.1:
+A tradução está praticamente completa, mas ainda podem existir resíduos extremamente pequenos em inglês.
 
-- alguns textos específicos de UI ainda podem permanecer em inglês;
-- os upgrades da Fênix podem conter resíduos de interface não traduzidos;
-- algumas falas excepcionalmente longas em PT-BR podem ultrapassar caixas de diálogo sem rolagem adequada;
-- caminhos raros de UI/gameplay ainda podem conter texto residual;
-- atualizações futuras do jogo podem introduzir novos textos ou alterar assets já tratados.
+Alguns textos estão incorporados diretamente em:
 
-Se encontrar um caso reproduzível, abra uma Issue com captura de tela e contexto.
+- Blueprints executáveis;
+- bytecode;
+- elementos gráficos.
+
+Alterar esses casos poderia introduzir risco desnecessário de crash ou corrupção de sistemas. Por isso, alguns elementos de baixíssima prioridade foram deliberadamente preservados.
+
+Também existem casos raros em que traduções em português ocupam mais espaço que o texto original. Algumas caixas de diálogo não possuem rolagem ou redimensionamento automático suficiente, e uma fala excepcionalmente longa pode ter a última linha cortada.
+
+Esses resíduos não impedem a progressão nem afetam saves.

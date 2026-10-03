@@ -1,23 +1,23 @@
 # Changelog
 
-## v1.1
+## v2.1 FINAL
 
-- Revisão ampla da tradução PT-BR.
-- Descrições de planetas, luas e outros corpos celestes incorporadas aos mapas de navegação.
-- Auditoria independente dos mapas `MODNavigation` para recuperar textos ausentes do ScriptMap antigo.
-- Correções em quests, diálogos, descrições e interface.
-- Correção de casos de `<MISSING STRING TABLE ENTRY>`.
-- Reinjeção mais segura em assets Unreal.
-- Assets com `ScriptBytecode` não são reconstruídos via `fromjson`.
-- Textos localizados em Blueprint/bytecode tratados por métodos conservadores quando aplicável.
-- Upgrades da Fênix ainda podem apresentar textos de UI em inglês.
-- Recomenda-se remover versões antigas da tradução antes da instalação.
+Release final do projeto.
 
-## v1.0
-
-- Primeira versão pública.
-- Tradução principal concluída.
-- Mais de 10 mil entradas localizadas.
-- Diálogos, narrativa, missões, tutoriais, codex, descrições, habilidades, tooltips e grande parte da interface traduzidos.
-- Preservação de termos, placeholders, tags e conteúdo adulto.
-- QA final de terminologia e personalidade.
+- Corrigidos crashes em determinadas quests.
+- Corrigidas referências internas traduzidas acidentalmente.
+- Corrigido o seletor de cenas da Pandora.
+- Corrigida a interface da loja da Taron.
+- Restaurada a atualização dos créditos da loja.
+- Traduzidos diálogos e interações das Devotion Quests.
+- Traduzidos textos do sistema Speech Bubble.
+- Traduzidos textos pós-Devotion.
+- Revisadas referências ao Capitão e problemas de gênero.
+- Traduzidas habilidades e upgrades da F3N1X / Phoenix.
+- Corrigidos textos de Grid Combat.
+- Eliminadas ocorrências encontradas de `<MISSING STRING TABLE ENTRY>`.
+- Corrigidos textos de legenda de quests.
+- Traduzidos fallbacks como `Press to Skip`.
+- Restaurados mais de 300 textos da interface da Mary Celeste.
+- Reforçada a preservação de identificadores técnicos e referências internas.
+- Nenhum Blueprint executável foi reconstruído para aplicar a tradução.

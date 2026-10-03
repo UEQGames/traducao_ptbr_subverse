@@ -1,49 +1,45 @@
 # Instalação
 
-## Requisitos
+## Instalação limpa
 
-- Subverse para Windows.
-- A build do jogo deve ser compatível com a tradução v1.1.
+1. Feche Subverse.
+2. Se houver versões anteriores da tradução, remova os PAKs antigos.
+3. Baixe o pacote da Release e extraia o conteúdo.
+4. Copie:
 
-## Passo a passo
+```text
+pakchunk99999-SubversePTBR_STANDALONE_FINAL_P.pak
+```
 
-1. Feche o jogo.
-2. Baixe `Subverse_PTBR_v1.1.zip` na seção **Releases**.
-3. Extraia o arquivo.
-4. Na pasta do jogo, abra:
+para:
 
 ```text
 Subverse\Content\Paks\
 ```
 
-5. Remova versões antigas da tradução PT-BR para evitar conflito.
-6. Copie:
+Exemplo GOG:
 
 ```text
-pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak
+C:\Games\Subverse\Subverse\Content\Paks
 ```
 
-para a pasta `Paks`.
-7. Abra Subverse normalmente.
+5. Garanta que somente o PAK desta versão permaneça instalado.
+6. Inicie o jogo normalmente.
 
-### Exemplo GOG
+## Atualização
 
-```text
-C:\Games\Subverse\Subverse\Content\Paks\
-```
+Ao atualizar de qualquer versão anterior, remova todos os PAKs antigos da tradução PT-BR antes de instalar o release final.
+
+Não é necessário apagar ou reiniciar saves.
 
 ## Desinstalação
 
-Apague o arquivo:
+Remova:
 
 ```text
-pakchunk99990-SubversePTBRHumanUI_FINAL_CELESTIAL570_P.pak
+pakchunk99999-SubversePTBR_STANDALONE_FINAL_P.pak
 ```
 
-da pasta:
-
-```text
-Subverse\Content\Paks\
-```
+da pasta `Subverse\Content\Paks\`.
 
 Nenhum arquivo original do jogo é substituído permanentemente.

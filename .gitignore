@@ -5,7 +5,7 @@
 *.rar
 *.7z
 
-# Local development / extraction
+# Extracted/build files
 /extracted/
 /build/
 /temp/
