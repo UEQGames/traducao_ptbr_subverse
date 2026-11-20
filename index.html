@@ -1,0 +1,595 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080e1a">
+  <meta name="description" content="Baixe a tradução PT-BR de Subverse para PC. Versão 2.1 Final, com diálogos, missões, menus, combate e mais de 10 mil entradas traduzidas.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Subverse em Português Brasileiro | Tradução PT-BR">
+  <meta property="og:description" content="Tradução não oficial de Subverse para português brasileiro. Download gratuito e instruções de instalação.">
+  <meta property="og:url" content="https://ueqgames.github.io/traducao_ptbr_subverse/">
+  <link rel="canonical" href="https://ueqgames.github.io/traducao_ptbr_subverse/">
+  <title>Subverse PT-BR — Tradução Brasileira v2.1 Final | UEQGames</title>
+
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080e1a;
+      --surface: #101b2c;
+      --border: #263b52;
+      --text: #eaf3ff;
+      --muted: #a6bbce;
+      --cyan: #58e3ee;
+      --blue: #6c9bff;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font: 16px/1.7 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--cyan); }
+
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--cyan);
+      outline-offset: 4px;
+    }
+
+    .wrap {
+      width: min(1100px, calc(100% - 40px));
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(8,14,26,.96);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 12px 0;
+    }
+
+    .brand {
+      font-size: 1.08rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .brand span { color: var(--cyan); }
+
+    .links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    .links a:hover { color: var(--cyan); }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 105px 0 95px;
+      background:
+        radial-gradient(ellipse at 80% 20%, #13476d90, transparent 48%),
+        radial-gradient(ellipse at 15% 80%, #32246465, transparent 48%),
+        linear-gradient(145deg, #0d1b32, #080e1a 75%);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: .15;
+      background-image:
+        linear-gradient(#7cbce933 1px, transparent 1px),
+        linear-gradient(90deg, #7cbce933 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .hero .wrap { position: relative; }
+
+    .eyebrow {
+      color: var(--cyan);
+      text-transform: uppercase;
+      letter-spacing: .19em;
+      font-size: .78rem;
+      font-weight: 800;
+    }
+
+    h1 {
+      font-size: clamp(3.2rem, 9vw, 6rem);
+      line-height: 1.05;
+      letter-spacing: -.06em;
+      margin: 15px 0;
+    }
+
+    h1 span {
+      display: block;
+      font-size: clamp(1.25rem, 3.5vw, 2rem);
+      letter-spacing: -.02em;
+      color: var(--cyan);
+      margin-top: 12px;
+    }
+
+    .intro {
+      max-width: 720px;
+      color: #c3d5e8;
+      font-size: 1.13rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 13px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      gap: 9px;
+      min-height: 50px;
+      padding: 13px 23px;
+      border-radius: 9px;
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform .18s, background .18s;
+    }
+
+    .btn:hover { transform: translateY(-2px); }
+
+    .primary {
+      background: var(--cyan);
+      color: #061622;
+    }
+
+    .primary:hover { background: #9af5fa; }
+
+    .secondary {
+      color: #eaf3ff;
+      border: 1px solid #52728e;
+      background: #17283b;
+    }
+
+    .secondary:hover { background: #23415b; }
+
+    .meta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+    }
+
+    .tag {
+      border: 1px solid #41637c;
+      background: #14283b;
+      color: #cee7f5;
+      padding: 6px 13px;
+      border-radius: 100px;
+      font-size: .8rem;
+    }
+
+    section { padding: 76px 0; scroll-margin-top: 100px; }
+
+    .alt {
+      background: #0c1523;
+      border-block: 1px solid #1c3045;
+    }
+
+    h2 {
+      font-size: clamp(1.65rem, 4vw, 2.4rem);
+      line-height: 1.2;
+      margin: 0 0 15px;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 780px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 17px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      padding: 25px;
+      border-radius: 14px;
+    }
+
+    .card h3 {
+      color: #fff;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .number {
+      color: var(--cyan);
+      font-weight: 800;
+      letter-spacing: .08em;
+      font-size: .85rem;
+      margin-bottom: 13px;
+    }
+
+    .install {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 24px;
+      align-items: start;
+    }
+
+    ol { padding-left: 23px; }
+
+    li { margin-bottom: 13px; }
+
+    code {
+      background: #172b40;
+      color: #b5f5fc;
+      padding: 3px 7px;
+      border-radius: 5px;
+      overflow-wrap: anywhere;
+    }
+
+    .path {
+      display: block;
+      padding: 15px;
+      margin: 15px 0;
+      background: #07111e;
+      border: 1px solid #2c4d63;
+      border-radius: 8px;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      border-left: 3px solid var(--cyan);
+      padding: 16px 19px;
+      background: #11283b;
+      margin-top: 25px;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .notice p { margin: 0; }
+
+    .download {
+      text-align: center;
+      padding: 45px 28px;
+      background:
+        linear-gradient(135deg, #173552, #121b36);
+      border: 1px solid #376b8c;
+      border-radius: 18px;
+    }
+
+    .download p {
+      color: #c2d7e8;
+      max-width: 660px;
+      margin: 0 auto 26px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 760px) {
+      .grid, .install { grid-template-columns: 1fr; }
+      .hero { padding: 75px 0; }
+      section { padding: 55px 0; }
+      nav { justify-content: center; }
+      .links { justify-content: center; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .btn { transition: none; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Subverse - Tradução PT-BR",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Windows",
+    "softwareVersion": "2.1.0",
+    "inLanguage": "pt-BR",
+    "description": "Tradução não oficial de Subverse para português brasileiro, distribuída gratuitamente como mod.",
+    "url": "https://ueqgames.github.io/traducao_ptbr_subverse/",
+    "downloadUrl": "https://github.com/UEQGames/traducao_ptbr_subverse/releases/download/v2.1.0/Subverse_PTBR_FINAL_v2.1.zip",
+    "isAccessibleForFree": true,
+    "author": {
+      "@type": "Organization",
+      "name": "UEQGames"
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <nav class="wrap" aria-label="Navegação principal">
+      <a class="brand" href="#inicio">UEQ<span>GAMES</span></a>
+      <div class="links">
+        <a href="#sobre">Sobre</a>
+        <a href="#conteudo">Conteúdo</a>
+        <a href="#instalacao">Instalação</a>
+        <a href="#compatibilidade">Compatibilidade</a>
+        <a href="#baixar">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="inicio">
+      <div class="wrap">
+        <div class="eyebrow">Projeto de fã • Tradução não oficial</div>
+        <h1>SUBVERSE
+          <span>Agora em Português Brasileiro</span>
+        </h1>
+
+        <p class="intro">
+          Explore a galáxia, acompanhe a história e aproveite os diálogos,
+          missões, sistemas de combate e interfaces de Subverse em PT-BR.
+          Uma tradução desenvolvida com foco na fidelidade ao conteúdo original.
+        </p>
+
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/UEQGames/traducao_ptbr_subverse/releases/download/v2.1.0/Subverse_PTBR_FINAL_v2.1.zip">
+            ↓ Baixar tradução v2.1 Final
+          </a>
+          <a class="btn secondary" href="#instalacao">
+            Como instalar
+          </a>
+        </div>
+
+        <div class="meta">
+          <span class="tag">Versão 2.1 Final</span>
+          <span class="tag">Windows</span>
+          <span class="tag">Download gratuito</span>
+          <span class="tag">Mais de 10 mil entradas traduzidas</span>
+        </div>
+      </div>
+    </div>
+
+    <section id="sobre">
+      <div class="wrap">
+        <div class="eyebrow">Sobre o projeto</div>
+        <h2>Uma experiência mais acessível para jogadores brasileiros</h2>
+        <p class="lead">
+          A tradução PT-BR de Subverse é um projeto independente que
+          passou por etapas de tradução contextual, revisão de diálogos,
+          correções de interface, auditoria de arquivos e testes dentro do jogo.
+        </p>
+        <p>
+          O trabalho buscou preservar o humor, a personalidade dos personagens,
+          a linguagem irreverente e o conteúdo adulto original, sem censura
+          intencional. A versão 2.1 Final reúne os ajustes e correções realizados
+          durante o desenvolvimento.
+        </p>
+      </div>
+    </section>
+
+    <section id="conteudo" class="alt">
+      <div class="wrap">
+        <div class="eyebrow">Conteúdo</div>
+        <h2>O que está traduzido?</h2>
+        <p class="lead">
+          Mais de 10 mil entradas do sistema principal de localização,
+          além de centenas de textos presentes em outros arquivos do jogo.
+        </p>
+
+        <div class="grid">
+          <div class="card">
+            <div class="number">01 / NARRATIVA</div>
+            <h3>História e diálogos</h3>
+            <p>Conversas, narrativa, missões, objetivos, Devotion Quests, Codex e lore.</p>
+          </div>
+          <div class="card">
+            <div class="number">02 / INTERFACE</div>
+            <h3>Menus e sistemas</h3>
+            <p>Tutoriais, descrições, tooltips, menus e grande parte da interface.</p>
+          </div>
+          <div class="card">
+            <div class="number">03 / GAMEPLAY</div>
+            <h3>Combate e habilidades</h3>
+            <p>Grid Combat, habilidades, upgrades da F3N1X e textos de combate.</p>
+          </div>
+          <div class="card">
+            <div class="number">04 / UNIVERSO</div>
+            <h3>Mary Celeste</h3>
+            <p>Textos da nave, loja da Taron, interface da Pandora e interações adicionais.</p>
+          </div>
+          <div class="card">
+            <div class="number">05 / QUALIDADE</div>
+            <h3>Revisões e correções</h3>
+            <p>Ajustes em referências internas, estabilidade, seletores e textos ausentes.</p>
+          </div>
+          <div class="card">
+            <div class="number">06 / FIDELIDADE</div>
+            <h3>Sem censura intencional</h3>
+            <p>Humor, palavrões e conteúdo adulto preservados conforme a proposta original.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="instalacao">
+      <div class="wrap">
+        <div class="eyebrow">Guia rápido</div>
+        <h2>Como instalar a tradução</h2>
+        <div class="install">
+          <div>
+            <ol>
+              <li>Feche Subverse antes de começar.</li>
+              <li>Remova arquivos PAK de versões anteriores da tradução.</li>
+              <li>Baixe o ZIP da versão 2.1 Final e extraia seu conteúdo.</li>
+              <li>Copie o arquivo <code>pakchunk99999-SubversePTBR_STANDALONE_FINAL_P.pak</code> para a pasta de PAKs do jogo.</li>
+              <li>Inicie Subverse normalmente.</li>
+            </ol>
+
+            <p><strong>Destino do arquivo:</strong></p>
+            <code class="path">Subverse\Content\Paks\</code>
+
+            <div class="notice">
+              <p>
+                <strong>Importante:</strong> mantenha apenas a versão mais recente
+                da tradução. Não é necessário apagar ou reiniciar seus saves.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Instalação detalhada</h3>
+            <p>
+              Precisa localizar a pasta do jogo ou conferir os procedimentos?
+              Consulte a documentação completa no GitHub.
+            </p>
+            <p style="margin-top:18px">
+              <a href="https://github.com/UEQGames/traducao_ptbr_subverse/blob/main/docs/INSTALL.md">
+                Ver instruções completas →
+              </a>
+            </p>
+            <p style="margin-top:18px">
+              <strong>Desinstalação:</strong> basta remover o PAK da tradução
+              da pasta indicada. Os arquivos originais do jogo não são substituídos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="compatibilidade" class="alt">
+      <div class="wrap">
+        <div class="eyebrow">Informações importantes</div>
+        <h2>Compatibilidade e limitações</h2>
+
+        <div class="grid">
+          <div class="card">
+            <h3>Versão testada</h3>
+            <p>
+              A tradução foi desenvolvida e testada na versão GOG utilizada
+              durante o projeto. A compatibilidade com outras versões
+              não foi integralmente confirmada.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Textos remanescentes</h3>
+            <p>
+              Pequenos resíduos em inglês podem permanecer em elementos
+              gráficos ou componentes internos cuja alteração ofereceria
+              risco à estabilidade do jogo.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3>Atualizações do jogo</h3>
+            <p>
+              Atualizações futuras de Subverse podem modificar os arquivos
+              de localização e exigir ajustes na tradução.
+            </p>
+          </div>
+        </div>
+
+        <p style="margin-top:25px">
+          <a href="https://github.com/UEQGames/traducao_ptbr_subverse/blob/main/docs/COMPATIBILITY.md">Documentação de compatibilidade</a>
+          ·
+          <a href="https://github.com/UEQGames/traducao_ptbr_subverse/blob/main/docs/KNOWN_ISSUES.md">Limitações conhecidas</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="baixar">
+      <div class="wrap">
+        <div class="download">
+          <div class="eyebrow">Versão final disponível</div>
+          <h2>Pronto para jogar em português?</h2>
+          <p>
+            Baixe gratuitamente o pacote da tradução PT-BR.
+            O arquivo é distribuído diretamente pelas Releases oficiais
+            do projeto no GitHub.
+          </p>
+
+          <div class="actions" style="justify-content:center">
+            <a class="btn primary" href="https://github.com/UEQGames/traducao_ptbr_subverse/releases/download/v2.1.0/Subverse_PTBR_FINAL_v2.1.zip">
+              ↓ Download da tradução
+            </a>
+            <a class="btn secondary" href="https://github.com/UEQGames/traducao_ptbr_subverse/releases/tag/v2.1.0">
+              Ver a Release
+            </a>
+          </div>
+
+          <p style="font-size:.85rem;margin-top:22px">
+            Versão 2.1 Final · Pacote ZIP de aproximadamente 109 MB
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>© UEQGames · Projeto de fã independente.</p>
+      <p>
+        Subverse pertence aos seus respectivos titulares.
+        Tradução não oficial, sem vínculo com os desenvolvedores.
+        É necessária uma cópia legítima do jogo.
+      </p>
+      <p>
+        <a href="https://github.com/UEQGames/traducao_ptbr_subverse">
+          Código, documentação e histórico no GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
