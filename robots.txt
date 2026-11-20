@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ueqgames.github.io/traducao_ptbr_subverse/sitemap.xml
